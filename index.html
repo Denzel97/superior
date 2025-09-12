@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Superior Support Services - Where Comfort Meets Compassion</title>
+    <title>Superior Healthcare Support - Where Comfort Meets Compassion</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -25,6 +25,30 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Extra CSS to unify images & cards -->
+    <style>
+      .service-item {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .service-img {
+        height: 220px; /* Fixed height for all images */
+        overflow: hidden;
+      }
+      .service-img img.service-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Ensures uniform crop */
+      }
+      .service-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
   </head>
 
   <body>
@@ -65,7 +89,7 @@
     <div class="container-fluid position-relative p-0">
       <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
         <!-- Logo -->
-        <a href="index.html" class=""><img src="img/SSS_Logo.png" alt="Superior Support Services Logo" class="img-fluid" style="max-width: 320px; min-width: 180px; height: 120px;" /></a>
+        <a href="index.html" class=""><img src="img/SSS_Logo.png" alt="Superior Healthcare Support Logo" class="img-fluid" style="max-width: 320px; min-width: 180px; height: 120px;" /></a>
 
         <!-- Mobile Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="fa fa-bars"></span></button>
@@ -104,7 +128,7 @@
           <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Healthcare Staffing Solutions" />
           <div class="carousel-caption">
             <div class="carousel-caption-content p-3">
-              <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Superior Support Services – Where Comfort Meets Compassion</h5>
+              <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Superior Healthcare Support – Where Comfort Meets Compassion</h5>
               <h1 class="display-1 text-capitalize text-white mb-4">Trusted Healthcare Staffing Solutions</h1>
               <p class="mb-5 fs-5">Providing hospitals, nursing homes, and clinics with highly skilled nurses, therapists, and support staff to ensure exceptional patient care.</p>
               <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#services">Explore Services</a>
@@ -115,7 +139,7 @@
           <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Join Our Healthcare Team" />
           <div class="carousel-caption">
             <div class="carousel-caption-content p-3">
-              <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Superior Support Services – Where Comfort Meets Compassion</h5>
+              <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Superior Healthcare Support – Where Comfort Meets Compassion</h5>
               <h1 class="display-1 text-capitalize text-white mb-4">Join Our Team of Caring Professionals</h1>
               <p class="mb-5 fs-5">Discover rewarding career opportunities with flexible scheduling, competitive pay, and placements across Maryland’s leading healthcare facilities.</p>
               <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="careers.html">Apply Now</a>
@@ -137,99 +161,100 @@
           <h1 class="display-3 mb-4">Comprehensive Healthcare Staffing Solutions</h1>
           <p class="mb-0">At Superior Support Services, we connect healthcare facilities with highly skilled professionals. Whether you need temporary coverage, long-term staff, or travel nurses, our team ensures reliable and compassionate staffing tailored to your needs.</p>
         </div>
+
         <div class="row g-4 justify-content-center">
-          <!-- Temporary Staffing -->
+          <!-- Service Item -->
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded">
+            <div class="service-item rounded h-100 d-flex flex-column">
               <div class="service-img rounded-top">
-                <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="Temporary Staffing" />
+                <img src="img/temporary.jpg" class="img-fluid rounded-top w-100 service-image" alt="Temporary Staffing" />
               </div>
-              <div class="service-content rounded-bottom bg-light p-4">
-                <div class="service-content-inner">
-                  <h5 class="mb-4">Temporary Staffing</h5>
+              <div class="service-content rounded-bottom bg-light p-4 flex-grow-1 d-flex flex-column">
+                <div class="service-content-inner flex-grow-1">
+                  <h5 class="mb-3">Temporary Staffing</h5>
                   <p class="mb-4">Qualified professionals available on-demand to cover short-term needs and ensure seamless patient care.</p>
-                  <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
+                <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
 
           <!-- Permanent Placement -->
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded">
+            <div class="service-item rounded h-100 d-flex flex-column">
               <div class="service-img rounded-top">
-                <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="Permanent Placement" />
+                <img src="img/permanent.jpg" class="img-fluid rounded-top w-100 service-image" alt="Permanent Placement" />
               </div>
-              <div class="service-content rounded-bottom bg-light p-4">
-                <div class="service-content-inner">
-                  <h5 class="mb-4">Permanent Placement</h5>
+              <div class="service-content rounded-bottom bg-light p-4 flex-grow-1 d-flex flex-column">
+                <div class="service-content-inner flex-grow-1">
+                  <h5 class="mb-3">Permanent Placement</h5>
                   <p class="mb-4">We help facilities find full-time, long-term healthcare professionals who fit seamlessly into your team.</p>
-                  <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
+                <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
 
           <!-- Contract Staffing -->
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item rounded">
+            <div class="service-item rounded h-100 d-flex flex-column">
               <div class="service-img rounded-top">
-                <img src="img/service-3.jpg" class="img-fluid rounded-top w-100" alt="Contract Staffing" />
+                <img src="img/contract.jpg" class="img-fluid rounded-top w-100 service-image" alt="Contract Staffing" />
               </div>
-              <div class="service-content rounded-bottom bg-light p-4">
-                <div class="service-content-inner">
-                  <h5 class="mb-4">Contract Staffing</h5>
+              <div class="service-content rounded-bottom bg-light p-4 flex-grow-1 d-flex flex-column">
+                <div class="service-content-inner flex-grow-1">
+                  <h5 class="mb-3">Contract Staffing</h5>
                   <p class="mb-4">Flexible staffing options for special projects, seasonal needs, or extended coverage periods.</p>
-                  <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
+                <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
 
           <!-- Travel Nursing -->
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="service-item rounded">
+            <div class="service-item rounded h-100 d-flex flex-column">
               <div class="service-img rounded-top">
-                <img src="img/service-4.jpg" class="img-fluid rounded-top w-100" alt="Travel Nursing" />
+                <img src="img/travel.jpg" class="img-fluid rounded-top w-100 service-image" alt="Travel Nursing" />
               </div>
-              <div class="service-content rounded-bottom bg-light p-4">
-                <div class="service-content-inner">
-                  <h5 class="mb-4">Travel Nursing</h5>
+              <div class="service-content rounded-bottom bg-light p-4 flex-grow-1 d-flex flex-column">
+                <div class="service-content-inner flex-grow-1">
+                  <h5 class="mb-3">Travel Nursing</h5>
                   <p class="mb-4">Experienced nurses placed across different locations, bringing expertise wherever it’s needed most.</p>
-                  <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
+                <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
 
           <!-- Allied Health Professionals -->
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded">
+            <div class="service-item rounded h-100 d-flex flex-column">
               <div class="service-img rounded-top">
-                <img src="img/service-5.jpg" class="img-fluid rounded-top w-100" alt="Allied Health Professionals" />
+                <img src="img/allied.jpg" class="img-fluid rounded-top w-100 service-image" alt="Allied Health Professionals" />
               </div>
-              <div class="service-content rounded-bottom bg-light p-4">
-                <div class="service-content-inner">
-                  <h5 class="mb-4">Allied Health Professionals</h5>
+              <div class="service-content rounded-bottom bg-light p-4 flex-grow-1 d-flex flex-column">
+                <div class="service-content-inner flex-grow-1">
+                  <h5 class="mb-3">Allied Health Professionals</h5>
                   <p class="mb-4">From therapists to radiology technicians, we provide a range of allied health staff to support quality care.</p>
-                  <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
+                <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
 
           <!-- Support Staff -->
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded">
+            <div class="service-item rounded h-100 d-flex flex-column">
               <div class="service-img rounded-top">
-                <img src="img/service-6.jpg" class="img-fluid rounded-top w-100" alt="Support Staff" />
+                <img src="img/support.jpg" class="img-fluid rounded-top w-100 service-image" alt="Support Staff" />
               </div>
-              <div class="service-content rounded-bottom bg-light p-4">
-                <div class="service-content-inner">
-                  <h5 class="mb-4">Support Staff</h5>
+              <div class="service-content rounded-bottom bg-light p-4 flex-grow-1 d-flex flex-column">
+                <div class="service-content-inner flex-grow-1">
+                  <h5 class="mb-3">Support Staff</h5>
                   <p class="mb-4">Medical assistants, administrative staff, and other essential professionals who keep healthcare facilities running smoothly.</p>
-                  <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
+                <a href="#services" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
@@ -248,21 +273,28 @@
         <div class="row g-5 align-items-center">
           <!-- Left Image Section -->
           <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="about-img pb-5 ps-5">
-              <img src="img/about-1.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Healthcare Staffing" />
-              <div class="about-img-inner">
-                <img src="img/about-2.jpg" class="img-fluid rounded-circle w-100 h-100" alt="Superior Support Services Team" />
+            <div class="about-img pb-5 ps-5 position-relative">
+              <!-- Main rectangle image -->
+              <img src="img/about5.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Healthcare Staffing" />
+
+              <!-- Circular overlay image -->
+              <div class="about-img-inner position-absolute" 
+                  style="bottom: -40px; left: -40px; width: 350px; height: 350px; border: 8px solid #fff; border-radius: 50%; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.15);">
+                <img src="img/about1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Superior Healthcare Support Team" />
               </div>
+
+              <!-- Experience text -->
               <div class="about-experience">Trusted Healthcare Staffing</div>
             </div>
           </div>
+
 
           <!-- Right Content Section -->
           <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
             <div class="section-title text-start mb-5">
               <h4 class="sub-title pe-3 mb-0">About Us</h4>
               <h1 class="display-3 mb-4">Where Comfort Meets Compassion in Healthcare Staffing</h1>
-              <p class="mb-4">Superior Support Services is a healthcare staffing agency dedicated to connecting facilities with exceptional professionals. We serve hospitals, nursing homes, clinics, and home healthcare providers across Maryland with flexible, reliable staffing solutions. Our mission is simple: ensure that every facility has the right people to provide quality care when it matters most.</p>
+              <p class="mb-4">Superior Healthcare Support is a healthcare staffing agency dedicated to connecting facilities with exceptional professionals. We serve hospitals, nursing homes, clinics, and home healthcare providers across Maryland with flexible, reliable staffing solutions. Our mission is simple: ensure that every facility has the right people to provide quality care when it matters most.</p>
               <div class="mb-4">
                 <p class="text-secondary">
                   <i class="fa fa-check text-primary me-2"></i> Personalized staffing solutions tailored to your facility’s needs.
@@ -290,7 +322,7 @@
             <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
           </div>
           <h1 class="display-3 mb-4">Trusted Healthcare Staffing With Compassion</h1>
-          <p class="mb-0">Superior Support Services provides reliable, qualified, and compassionate healthcare professionals across Maryland. With a focus on quality and care, we are the trusted partner for facilities in need of temporary, permanent, or travel staffing solutions.</p>
+          <p class="mb-0">Superior Healthcare Support provides reliable, qualified, and compassionate healthcare professionals across Maryland. With a focus on quality and care, we are the trusted partner for facilities in need of temporary, permanent, or travel staffing solutions.</p>
         </div>
         <div class="row g-4 justify-content-center">
           <!-- Rigorous Screening -->
@@ -412,7 +444,7 @@
             <div class="section-title text-start">
               <h4 class="sub-title pe-3 mb-0">Request Staffing Support</h4>
               <h1 class="display-4 mb-4">Reliable Healthcare Staffing When You Need It Most</h1>
-              <p class="mb-4">At Superior Support Services, we make it easy for hospitals, nursing homes, and healthcare facilities across Maryland to get the qualified staff they need quickly. Whether you require nurses, allied health professionals, or support staff, our team is ready to connect you with compassionate and skilled professionals.</p>
+              <p class="mb-4">At Superior Healthcare Support, we make it easy for hospitals, nursing homes, and healthcare facilities across Maryland to get the qualified staff they need quickly. Whether you require nurses, allied health professionals, or support staff, our team is ready to connect you with compassionate and skilled professionals.</p>
               <div class="row g-4">
                 <div class="col-sm-6">
                   <div class="d-flex flex-column h-100">
@@ -431,7 +463,7 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="video h-100">
-                    <img src="img/video-img.jpg" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="Superior Support Services Video" />
+                    <img src="img/about4.jpg" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="Superior Healthcare Support Video" />
                     <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal"><span></span></button>
                   </div>
                 </div>
@@ -492,7 +524,7 @@
       <div class="modal-dialog">
         <div class="modal-content rounded-0">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Learn More About Superior Support Services</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Learn More About Superior Healthcare Support</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -513,8 +545,8 @@
           <div class="sub-style">
             <h4 class="sub-title px-3 mb-0">Meet Our Team</h4>
           </div>
-          <h1 class="display-3 mb-4">Dedicated Professionals Behind Superior Support Services</h1>
-          <p class="mb-0">At Superior Support Services, our strength lies in the people who lead and support our mission. From experienced recruiters to healthcare staffing specialists, our team is committed to connecting facilities with qualified professionals who deliver compassionate care.</p>
+          <h1 class="display-3 mb-4">Dedicated Professionals Behind Superior Healthcare Support</h1>
+          <p class="mb-0">At Superior Healthcare Support, our strength lies in the people who lead and support our mission. From experienced recruiters to healthcare staffing specialists, our team is committed to connecting facilities with qualified professionals who deliver compassionate care.</p>
         </div>
         <div class="row g-4 justify-content-center">
           <!-- Team Member -->
@@ -605,7 +637,7 @@
               <div class="testimonial-inner-img mb-4">
                 <img src="img/testimonial-img.jpg" class="img-fluid rounded-circle" alt="Client Image" />
               </div>
-              <p class="text-white fs-7">“Superior Support Services has consistently provided us with reliable and professional nurses. They understand our facility’s needs and always deliver top-quality staff.”</p>
+              <p class="text-white fs-7">“Superior Healthcare Support has consistently provided us with reliable and professional nurses. They understand our facility’s needs and always deliver top-quality staff.”</p>
               <div class="text-center">
                 <h5 class="mb-2">Sarah Mitchell</h5>
                 <p class="mb-2 text-white-50">Director of Nursing, Chicago IL</p>
@@ -647,7 +679,7 @@
               <div class="testimonial-inner-img mb-4">
                 <img src="img/testimonial-img.jpg" class="img-fluid rounded-circle" alt="Healthcare Admin Image" />
               </div>
-              <p class="text-white fs-7">“From credentialing to placement, their process is seamless. Superior Support Services makes staffing stress-free for administrators like me.”</p>
+              <p class="text-white fs-7">“From credentialing to placement, their process is seamless. Superior Healthcare Support makes staffing stress-free for administrators like me.”</p>
               <div class="text-center">
                 <h5 class="mb-2">Laura Gonzalez</h5>
                 <p class="mb-2 text-white-50">Healthcare Administrator, Texas</p>
@@ -677,13 +709,14 @@
           <p class="mb-0">Stay updated with the latest industry insights, staffing solutions, and tips for both healthcare facilities and professionals. Our blog brings you knowledge that supports smarter staffing decisions.</p>
         </div>
         <div class="row g-4 justify-content-center">
+          
           <!-- Blog Post -->
           <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="blog-item rounded">
-              <div class="blog-img">
-                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="Healthcare Staffing Trends" />
+            <div class="blog-item rounded h-100 d-flex flex-column">
+              <div class="blog-img" style="height: 250px; overflow: hidden;">
+                <img src="img/blog1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Healthcare Staffing Trends" />
               </div>
-              <div class="blog-centent p-4">
+              <div class="blog-centent p-4 d-flex flex-column flex-grow-1">
                 <div class="d-flex justify-content-between mb-4">
                   <p class="mb-0 text-muted">
                     <i class="fa fa-calendar-alt text-primary"></i> 15 Aug 2025
@@ -691,19 +724,19 @@
                   <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 5 Comments</a>
                 </div>
                 <a href="#" class="h4">Top Healthcare Staffing Trends in 2025</a>
-                <p class="my-4">From travel nursing demand to allied health opportunities, explore what’s shaping the future of healthcare staffing.</p>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                <p class="my-4 flex-grow-1">From travel nursing demand to allied health opportunities, explore what’s shaping the future of healthcare staffing.</p>
+                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
 
           <!-- Blog Post -->
           <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="blog-item rounded">
-              <div class="blog-img">
-                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="Career Growth" />
+            <div class="blog-item rounded h-100 d-flex flex-column">
+              <div class="blog-img" style="height: 250px; overflow: hidden;">
+                <img src="img/blog2.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Career Growth" />
               </div>
-              <div class="blog-centent p-4">
+              <div class="blog-centent p-4 d-flex flex-column flex-grow-1">
                 <div class="d-flex justify-content-between mb-4">
                   <p class="mb-0 text-muted">
                     <i class="fa fa-calendar-alt text-primary"></i> 05 Aug 2025
@@ -711,19 +744,19 @@
                   <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 8 Comments</a>
                 </div>
                 <a href="#" class="h4">Why Nurses Choose Staffing Agencies for Career Growth</a>
-                <p class="my-4">Discover how staffing agencies open doors to flexibility, higher pay, and nationwide opportunities for nurses.</p>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                <p class="my-4 flex-grow-1">Discover how staffing agencies open doors to flexibility, higher pay, and nationwide opportunities for nurses.</p>
+                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
 
           <!-- Blog Post -->
           <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="blog-item rounded">
-              <div class="blog-img">
-                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="Facility Tips" />
+            <div class="blog-item rounded h-100 d-flex flex-column">
+              <div class="blog-img" style="height: 250px; overflow: hidden;">
+                <img src="img/blog3.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Facility Tips" />
               </div>
-              <div class="blog-centent p-4">
+              <div class="blog-centent p-4 d-flex flex-column flex-grow-1">
                 <div class="d-flex justify-content-between mb-4">
                   <p class="mb-0 text-muted">
                     <i class="fa fa-calendar-alt text-primary"></i> 28 Jul 2025
@@ -731,11 +764,12 @@
                   <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 2 Comments</a>
                 </div>
                 <a href="#" class="h4">How Facilities Can Improve Retention with Better Staffing</a>
-                <p class="my-4">Learn strategies facilities can implement to reduce burnout and keep healthcare professionals engaged long-term.</p>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                <p class="my-4 flex-grow-1">Learn strategies facilities can implement to reduce burnout and keep healthcare professionals engaged long-term.</p>
+                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mt-auto">Read More</a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -748,9 +782,9 @@
           <!-- Company Info -->
           <div class="col-md-6 col-lg-6 col-xl-3">
             <div class="footer-item d-flex flex-column">
-              <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Superior Support Services</h4>
+              <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Superior Healthcare Support</h4>
               <p>
-                Superior Support Services is a healthcare staffing agency providing temporary and permanent personnel to hospitals, clinics, nursing homes, group homes, assisted living, home healthcare, doctors’ offices, and many more facilities. <br /><em>“Where Comfort Meets Compassion. Exceptional Care Always.”</em>
+                Superior Healthcare Support is a healthcare staffing agency providing temporary and permanent personnel to hospitals, clinics, nursing homes, group homes, assisted living, home healthcare, doctors’ offices, and many more facilities. <br /><em>“Where Comfort Meets Compassion. Exceptional Care Always.”</em>
               </p>
               <div class="d-flex align-items-center">
                 <i class="fas fa-share fa-2x text-white me-2"></i>
@@ -811,7 +845,7 @@
             <span class="text-white">
               <a href="#">
                 <i class="fas fa-copyright text-light me-2"></i>
-                Superior Support Services
+                Superior Healthcare Support
               </a>, All Rights Reserved.
             </span>
           </div>
